@@ -2,7 +2,7 @@ import express from 'express';
 import nunjucks from 'nunjucks';
 
 const app = express();
-const PORT = 8081;
+const PORT = process.env.PORT || 8080;
 
 app.use('/assets', express.static('node_modules/govuk-frontend/govuk/assets'));
 

@@ -7,6 +7,9 @@ WORKDIR /usr/src/app
 # Copy package.json and package-lock.json first to leverage Docker cache
 COPY package*.json ./
 
+# Set environment variable for PORT
+ENV PORT 8080
+
 # Install project dependencies
 RUN npm install
 
@@ -14,7 +17,7 @@ RUN npm install
 COPY . .
 
 # Make port 8080 available to the world outside this container
-EXPOSE 8081
+EXPOSE PORT
 
 # Run the application using nodemon for development
 CMD ["npm", "run", "start:dev"]
