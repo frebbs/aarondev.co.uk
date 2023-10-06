@@ -2,17 +2,20 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Build Docker Image') {
             steps {
-                sh 'npm install'
-                sh 'npm run sass'
+                script {
+                    // Build the Docker image
+                    def appImage = docker.build("aarondev")
+                }
             }
         }
-
-        stage('Deploy') {
+        stage('Run Docker Container') {
             steps {
-                // Your deployment steps here
-                echo 'Deploying...'  // Add this line or replace it with your actual deployment steps.
+                script {
+                    // Run the Docker container
+                    docker.image("aarondev").run("-p 8081:8081")
+                }
             }
         }
     }
