@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // This will run 'npm run build' in your project directory
+                sh 'npm install'
                 sh 'npm run sass'
             }
         }
@@ -12,6 +12,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Your deployment steps here
+                echo 'Deploying...'  // Add this line or replace it with your actual deployment steps.
             }
         }
     }
