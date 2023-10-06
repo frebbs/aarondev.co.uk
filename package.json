@@ -1,0 +1,31 @@
+{
+  "name": "app1_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "script:tree": "tree -a -I 'node_modules|.idea|.git|.vscode'",
+    "start:dev": "nodemon app.js",
+    "start:browserSync": "browser-sync start --proxy \"localhost:8080\" --files \"views/**/*.njk, public/css/*.css, public/js/*.js\"",
+    "sass": "sass scss/main.scss:public/css/main.css",
+    "sass:watch": "sass --watch scss/main.scss:public/css/main.css",
+    "dev": "concurrently \"npm run start:dev\" \"npm run sass:watch\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "govuk-frontend": "^4.7.0",
+    "nunjucks": "^3.2.4",
+    "sass": "^1.67.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  }
+}
