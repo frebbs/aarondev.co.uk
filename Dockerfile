@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Set environment variable for PORT
-ENV PORT 8080
+ENV PORT 8081
 
 # Install project dependencies
 RUN npm install

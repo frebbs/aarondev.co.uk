@@ -8,7 +8,7 @@ pipeline {
         )
     }
     environment {
-        PORT = "${params.ENVIRONMENT == 'root' ? '8080' : params.ENVIRONMENT == 'dev1' ? '8081' : '8082'}"
+        PORT = "${params.ENVIRONMENT == 'root' ? '8081' : params.ENVIRONMENT == 'dev1' ? '8082' : '8083'}"
     }
     stages {
         stage('Checkout') {
