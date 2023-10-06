@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 // This will run 'npm run build' in your project directory
-                sh 'npm run build'
+                sh 'npm run sass'
             }
         }
 
