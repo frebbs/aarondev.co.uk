@@ -10,8 +10,11 @@ COPY package*.json ./
 # Install project dependencies
 RUN npm install
 
+# Copy the rest of your project files into the Docker container
+COPY . .
+
 # Make port 8080 available to the world outside this container
-EXPOSE 8080
+EXPOSE 8081
 
 # Run the application using nodemon for development
 CMD ["npm", "run", "start:dev"]
