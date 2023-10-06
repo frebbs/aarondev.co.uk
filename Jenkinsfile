@@ -1,5 +1,18 @@
 pipeline {
     agent any
+    parameters {
+        choice(
+                name: 'ENVIRONMENT',
+                choices: ['dev1', 'prd1', 'root'],
+                description: 'Which environment to deploy to?'
+        )
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
     stages {
         stage('Stop Previous Container') {
             steps {
