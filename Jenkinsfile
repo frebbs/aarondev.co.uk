@@ -13,6 +13,7 @@ pipeline {
                 checkout scm
             }
         }
+    }
     stages {
         stage('Stop Previous Container') {
             steps {
