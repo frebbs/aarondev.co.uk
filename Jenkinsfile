@@ -6,12 +6,12 @@ pipeline {
             steps {
                 script {
                     // Attempt to stop and remove the previous container, ignoring errors if the container doesn't exist
-                    sh 'docker stop aarondev-container || true'
-                    sh 'docker rm aarondev-container || true'
+                    sh 'docker stop aarondev || true'
+                    sh 'docker rm aarondev || true'
                 }
             }
         }
-        
+
         stage('Build Docker Image') {
             steps {
                 script {
