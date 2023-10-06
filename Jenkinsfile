@@ -7,6 +7,9 @@ pipeline {
                 description: 'Which environment to deploy to?'
         )
     }
+    environment {
+        PORT = "${params.ENVIRONMENT == 'root' ? '8080' : params.ENVIRONMENT == 'dev1' ? '8081' : '8082'}"
+    }
     stages {
         stage('Checkout') {
             steps {
@@ -30,9 +33,8 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    def portMapping = (params.ENVIRONMENT == 'root') ? '80:8080' : '8081:8081'
                     def newContainer = "aarondev-${params.ENVIRONMENT}"
-                    sh "docker run -d -p ${portMapping} -e PORT=${portMapping.split(':')[1]} --name ${newContainer} aarondev"
+                    sh "docker run -d -p ${PORT}:${PORT} --name ${newContainer} aarondev"
                 }
             }
         }
