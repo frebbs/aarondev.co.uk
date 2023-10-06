@@ -16,7 +16,7 @@ pipeline {
         stage('Stop Previous Container') {
             steps {
                 script {
-                    def oldContainer = "aarondev"
+                    def oldContainer = "aarondev-${params.ENVIRONMENT}"
                     sh "docker stop ${oldContainer} || true"
                     sh "docker rm ${oldContainer} || true"
                 }
@@ -30,8 +30,9 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    def newContainer = "aarondev"
-                    sh "docker run -d -p 8081:8081 --name ${newContainer} aarondev"
+                    def portMapping = (params.ENVIRONMENT == 'root') ? '80:8080' : '8081:8081'
+                    def newContainer = "aarondev-${params.ENVIRONMENT}"
+                    sh "docker run -d -p ${portMapping} --name ${newContainer} aarondev"
                 }
             }
         }
