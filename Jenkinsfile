@@ -16,14 +16,18 @@ pipeline {
         PORT = "${params.ENVIRONMENT == 'root' ? '3000' : params.ENVIRONMENT == 'dev1' ? '8080' : params.ENVIRONMENT == 'dev2' ? '8081' : params.ENVIRONMENT == 'prd1' ? '8082' : 'unknown'}"
     }
     stages {
-        checkout([
-                $class: 'GitSCM',
-                branches: [[name: "${params.BRANCH_NAME}"]],
-                doGenerateSubmoduleConfigurations: false,
-                extensions: [],
-                submoduleCfg: [],
-                userRemoteConfigs: [[url: '<Your Git Repo URL>']]
-        ])
+        stage('Checkout Code') {
+            steps {
+                checkout([
+                        $class: 'GitSCM',
+                        branches: [[name: "${params.BRANCH_NAME}"]],
+                        doGenerateSubmoduleConfigurations: false,
+                        extensions: [],
+                        submoduleCfg: [],
+                        userRemoteConfigs: [[url: 'https://github.com/frebbs/aarondev.co.uk']]
+                ])
+            }
+        }
         stage('Stop Previous Container') {
             steps {
                 script {
