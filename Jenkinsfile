@@ -6,16 +6,24 @@ pipeline {
                 choices: ['dev1', 'dev2', 'prd1', 'root'],
                 description: 'Which environment to deploy to?'
         )
+        string(
+                name: 'BRANCH_NAME',
+                defaultValue: 'main',
+                description: 'Which branch to build?'
+        )
     }
     environment {
         PORT = "${params.ENVIRONMENT == 'root' ? '3000' : params.ENVIRONMENT == 'dev1' ? '8080' : params.ENVIRONMENT == 'dev2' ? '8081' : params.ENVIRONMENT == 'prd1' ? '8082' : 'unknown'}"
     }
     stages {
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
+        checkout([
+                $class: 'GitSCM',
+                branches: [[name: "${params.BRANCH_NAME}"]],
+                doGenerateSubmoduleConfigurations: false,
+                extensions: [],
+                submoduleCfg: [],
+                userRemoteConfigs: [[url: '<Your Git Repo URL>']]
+        ])
         stage('Stop Previous Container') {
             steps {
                 script {
