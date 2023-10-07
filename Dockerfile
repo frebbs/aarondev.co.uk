@@ -7,9 +7,6 @@ WORKDIR /usr/src/app
 # Copy package.json and package-lock.json first to leverage Docker cache
 COPY package*.json ./
 
-# Define a build argument for the PORT (with a default value of 8081)
-ARG PORT=8081
-
 # Set environment variable for PORT based on the build argument
 ENV PORT=${PORT}
 
