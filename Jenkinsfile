@@ -3,12 +3,12 @@ pipeline {
     parameters {
         choice(
                 name: 'ENVIRONMENT',
-                choices: ['dev1', 'prd1', 'root'],
+                choices: ['dev1', 'dev2', 'prd1', 'root'],
                 description: 'Which environment to deploy to?'
         )
     }
     environment {
-        PORT = "${params.ENVIRONMENT == 'root' ? '8081' : params.ENVIRONMENT == 'dev1' ? '8082' : '8083'}"
+        PORT = "${params.ENVIRONMENT == 'root' ? '3000' : params.ENVIRONMENT == 'dev1' ? '8080' : params.ENVIRONMENT == 'dev2' ? '8081' : params.ENVIRONMENT == 'prd1' ? '8082' : 'unknown'}"
     }
     stages {
         stage('Checkout') {
