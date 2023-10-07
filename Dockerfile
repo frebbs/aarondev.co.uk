@@ -8,7 +8,8 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Set environment variable for PORT
-ENV PORT "${params.ENVIRONMENT == 'root' ? '3000' : params.ENVIRONMENT == 'dev1' ? '8080' : params.ENVIRONMENT == 'dev2' ? '8081' : params.ENVIRONMENT == 'prd1' ? '8082' : 'unknown'}"
+ENV PORT "${params.ENVIRONMENT == 'root': '3000' : params.ENVIRONMENT == 'dev1': '8080' : params.ENVIRONMENT == 'dev2': '8081' : params.ENVIRONMENT == 'prd1': '8082' : 'unknown'}"
+
 # Install project dependencies
 RUN npm install
 
