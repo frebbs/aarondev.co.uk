@@ -34,7 +34,7 @@ pipeline {
             steps {
                 script {
                     def newContainer = "aarondev-${params.ENVIRONMENT}"
-                    sh "docker run -d -p ${PORT}:8081 -e PORT=${PORT} --name ${newContainer} aarondev"
+                    sh "docker run -d -p ${PORT}:${PORT} -e PORT=${PORT} --name ${newContainer} aarondev"
                 }
             }
         }

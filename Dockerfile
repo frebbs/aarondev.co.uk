@@ -8,8 +8,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Set environment variable for PORT based on the build argument
-ENV PORT=${PORT}
-
+ENV PORT=${PORT:-8080}
 
 # Install project dependencies
 RUN npm install
