@@ -5,7 +5,7 @@ services:
     build: ../
     container_name: frontend
     ports:
-      -  "${PORT}:${PORT}"  # Map the dynamic PORT variable to container port 8081
+      -  "${PORT:-8080}:${PORT:-8080}"
     volumes:
       - ../:/usr/src/app
     external_links:
