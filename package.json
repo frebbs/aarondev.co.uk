@@ -7,12 +7,12 @@
   "scripts": {
     "script:tree": "tree -a -I 'node_modules|.idea|.git|.vscode'",
     "start:dev": "nodemon app.js",
-    "start:browserSync": "browser-sync start --proxy \"localhost:8080\" --files \"views/**/*.njk, public/css/*.css, public/js/*.js\"",
+    "start:browserSync": "browser-sync start --proxy \"localhost:8080\" --files \"views/**/*.ejs, public/css/*.css, public/js/*.js\"",
     "start:js": "webpack --watch --mode development",
-    "sass": "sass scss/main.scss:public/css/main.css",
     "sass:watch": "sass --watch scss/main.scss:public/css/main.css",
     "dev": "concurrently \"npm run start:dev\" \"npm run sass:watch\" \"npm run start:js\"",
-    "build:js": "webpack --mode production"
+    "build:js": "webpack --mode production",
+    "build:sass": "sass scss/main.scss:public/css/main.css"
   },
   "keywords": [],
   "author": "",

@@ -16,13 +16,6 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Build JS and CSS') {
-            steps {
-                sh 'npm install'
-                sh 'npm run build:js'
-                sh 'npm run sass'
-            }
-        }
         stage('Stop Previous Container') {
             steps {
                 script {
