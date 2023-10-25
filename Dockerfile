@@ -7,8 +7,8 @@ WORKDIR /usr/src/app
 # Copy package.json and package-lock.json first to leverage Docker cache
 COPY package*.json ./
 
-# Set environment variable for PORT
-ENV PORT 8081
+# Set environment variable for PORT based on the build argument
+ENV PORT=${PORT:-8080}
 
 # Install project dependencies
 RUN npm install
@@ -18,7 +18,7 @@ RUN npm run sass
 # Copy the rest of your project files into the Docker container
 COPY . .
 
-# Make port 8080 available to the world outside this container
+# Make port  available to the world outside this container
 EXPOSE $PORT
 
 # Run the application using nodemon for development
