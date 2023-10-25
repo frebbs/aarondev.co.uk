@@ -1,1 +1,22 @@
-@import "../node_modules/govuk-frontend/govuk/all";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.bg-dark {
+  background: linear-gradient(45deg, #1e1e1e, #2c2c2c);
+}
+
+@keyframes dropAnimation {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.drop-down.starting-position {
+  transform: translateY(-100vh);
+}
+
+.drop-down.animate-drop {
+  animation: dropAnimation 1s forwards;
+}

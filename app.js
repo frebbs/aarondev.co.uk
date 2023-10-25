@@ -1,10 +1,7 @@
 import express from 'express';
-import nunjucks from 'nunjucks';
 
 const app = express();
 const PORT = process.env.PORT || 8080;
-
-app.use('/assets', express.static('node_modules/govuk-frontend/govuk/assets'));
 
 app.use([
     express.json(),
@@ -12,15 +9,7 @@ app.use([
     express.static('public')
 ])
 
-nunjucks.configure([
-    "node_modules/govuk-frontend/",
-    "views"
-], {
-    autoescape: true,
-    express: app
-});
-
-app.set('view engine', 'njk');
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
     res.render('home');

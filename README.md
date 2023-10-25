@@ -1,4 +1,6 @@
-# Frontend with GDS
+Absolutely, Aaron! I can help update the README file to reflect the changes from GDS to Bootstrap, the addition of EJS and Webpack, and the setup for SCSS and Bootstrap JS files. Here's the updated version of your README file:
+
+# Frontend with Bootstrap
 
 ## Table of Contents
 
@@ -6,29 +8,30 @@
 - [Prerequisites](#prerequisites)
 - [Dependencies](#dependencies)
 - [Dev Dependencies](#dev-dependencies)
-- [GOV.UK Design System and Nunjucks Setup](#govuk-design-system-and-nunjucks-setup)
-    - [GOV.UK Design System (GDS)](#govuk-design-system-gds)
-    - [Nunjucks](#nunjucks)
+- [Bootstrap and EJS Setup](#bootstrap-and-ejs-setup)
+    - [Bootstrap](#bootstrap)
+    - [EJS](#ejs)
     - [Configuration](#configuration)
     - [Usage](#usage)
+- [Webpack Setup](#webpack-setup)
 - [Installation](#installation)
     - [Local Installation](#local-installation)
 - [Docker Compose Configuration](#docker-compose-configuration)
     - [Standalone Static Page](#standalone-static-page)
     - [With API Backend](#with-api-backend)
-- [Running the Application](#Development)
-    - [With Docker](#Development)
+- [Running the Application](#running-the-application)
+    - [With Docker](#with-docker)
 - [Debugging](#debugging)
     - [Debugging with IntelliJ IDEA](#debugging-with-intellij-idea)
     - [Debugging with Visual Studio Code](#debugging-with-visual-studio-code)
 - [BrowserSync](#browsersync)
 - [Directory Structure](#directory-structure)
-- [Nunjucks Templating](#nunjucks-templating)
+- [EJS Templating](#ejs-templating)
 - [Understanding `package.json`](#understanding-packagejson)
 
 ## Overview
 
-This frontend application is constructed utilising Express, Nunjucks, and the GOV.UK Design System. It serves as a basis for creating scalable and maintainable frontend applications.
+This frontend application is constructed utilizing Express, EJS, Bootstrap, and Webpack. It serves as a basis for creating scalable and maintainable frontend applications.
 
 ## Prerequisites
 
@@ -39,55 +42,49 @@ This frontend application is constructed utilising Express, Nunjucks, and the GO
 ## Dependencies
 
 - Express
-- Nunjucks
-- GOV.UK Frontend
-- Sass
 - EJS
+- Bootstrap
+- Sass
 - CORS
 
 ## Dev Dependencies
 
 - Nodemon
 - Concurrently
+- Webpack
+- Babel
 
-## GOV.UK Design System and Nunjucks Setup
+## Bootstrap and EJS Setup
 
-### GOV.UK Design System (GDS)
+### Bootstrap
 
-The application makes use of the GOV.UK Design System for its user interface components. This design system provides a range of accessible, mobile-friendly, and user-friendly components that are in line with government design guidelines.
+The application makes use of Bootstrap for its user interface components. This design framework provides a range of accessible, mobile-friendly, and user-friendly components.
 
-### Nunjucks
+### EJS
 
-Nunjucks serves as the templating engine for this application, facilitating the server-side rendering of dynamic content. The engine offers robust features such as template inheritance, macros, and asynchronous control.
+EJS serves as the templating engine for this application, facilitating the server-side rendering of dynamic content.
 
 ### Configuration
 
-Nunjucks is configured within `app.js` as follows:
+Bootstrap and EJS are configured within `app.js` as follows:
 
 ```javascript
-import nunjucks from 'nunjucks';
-
-nunjucks.configure([
-    "node_modules/govuk-frontend/",
-    "views"
-], {
-    autoescape: true,
-    express: app
-});
-
-app.set('view engine', 'njk');
+import ejs from 'ejs';
+app.set('view engine', 'ejs');
 ```
 
 ### Usage
 
-To utilise a GOV.UK Frontend component within a Nunjucks template, simply include it as shown below:
+To utilize a Bootstrap component within an EJS template, you can simply use the appropriate HTML and classes as shown in the Bootstrap documentation.
 
-```njk
-{% from "govuk/components/button/macro.njk" import govukButton %}
+## Webpack Setup
 
-{{ govukButton({
-  text: "Continue"
-}) }}
+Webpack is configured to bundle the JavaScript files. The configuration can be found in `webpack.config.js` at the root of the project directory.
+
+Run the following command to bundle your JavaScript files:
+
+```bash
+npm run build:js
 ```
 
 ## Installation
@@ -97,7 +94,7 @@ To utilise a GOV.UK Frontend component within a Nunjucks template, simply includ
 1. **Clone the repository**
 2. **Navigate to the project directory**
     ```bash
-    cd app_frontend
+    cd aarondev.co.uk
     ```
 3. **Install Node.js dependencies**
     ```bash
@@ -115,7 +112,7 @@ The `docker-compose-local.yml` file is configured to allow the application to ru
 
 If you intend to run the application as a standalone application, you can simply remove or comment out the `external_links` section in the `docker-compose-local.yml` file:
 
-```yml
+```
 # external_links:
 #   - api_backend 
 ```
@@ -124,7 +121,7 @@ If you intend to run the application as a standalone application, you can simply
 
 If you wish to connect the application to a separate API backend running in another Docker container, you'll need to specify the backend service in the `external_links` section:
 
-```yml
+```
 external_links:
   - api_backend # Change this to your backend if it's called something different
 ```
@@ -199,17 +196,13 @@ While BrowserSync is incredibly useful for front-end development, there are scen
 ├── package-lock.json      # Automatically generated file to lock down dependency versions
 ├── public                 # Publicly accessible files
 │        ├── css                # Compiled CSS files
-│        │   ├── main.css       # Main stylesheet
-│        │   └── main.css.map   # Source map for the main stylesheet
+│        │   ├── bundle.css       # Main stylesheet
 │        └── js                 # JavaScript files
-│            └── govuk.js       # JavaScript file for GOV.UK components
 ├── README.md              # Documentation for the project
 ├── scss                   # Directory for Sass files
 │       └── main.scss           # Main Sass file to be compiled into CSS
 └── views                  # Directory for Nunjucks templates
-    ├── home.njk           # Home page template
-    └── template           # Directory for base templates
-        └── pageTemplate.njk    # Base template for pages
+
 
 ```
 
@@ -275,7 +268,7 @@ Certainly! Here's the guide in Markdown format, suitable for inclusion in your R
 
 Add the debug port to your `docker-compose-local.yml` under the `frontend` service:
 
-```yml
+```
 services:
   frontend:
     ...
@@ -289,7 +282,7 @@ services:
 Modify your `start:dev` script to enable debugging. For example:
 
 ```json
-"start:dev": "nodemon --inspect=0.0.0.0:9229 app.js",
+"start:dev": "nodemon --inspect=0.0.0.0:9229 app.bundle.js",
 ```
 
 #### 3. Rebuild and Restart Docker Containers
@@ -354,7 +347,7 @@ services:
 Modify your `start:dev` script to enable debugging. For example:
 
 ```json
-"start:dev": "nodemon --inspect=0.0.0.0:9229 app.js",
+"start:dev": "nodemon --inspect=0.0.0.0:9229 app.bundle.js",
 ```
 
 #### 3. Rebuild and Restart Docker Containers
@@ -401,9 +394,6 @@ You can now set breakpoints in your code within VS Code.
 Trigger the code path that you want to debug. VS Code should hit the breakpoints you've set.
 
 This will allow you to debug your Node.js application running in a Docker container using Visual Studio Code.
-
-
-Certainly! Below is the updated README.md file with the added sections about BrowserSync and the updated Table of Contents.
 
 
 

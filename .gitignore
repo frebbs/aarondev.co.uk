@@ -1,4 +1,4 @@
-# Node.js dependencies
+# Node.bundle.js dependencies
 node_modules/
 npm-debug.log
 
@@ -29,3 +29,6 @@ logs/
 # Other
 dist/
 build/
+/public/css
+/public/js
+/lib/
