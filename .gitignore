@@ -29,6 +29,4 @@ logs/
 # Other
 dist/
 build/
-/public/css
-/public/js
 /lib/
