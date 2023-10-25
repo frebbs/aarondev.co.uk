@@ -17,7 +17,7 @@ RUN npm install
 COPY . .
 
 RUN npm run build:js
-RUN npm run sass
+RUN npm run build:sass
 
 # Make port  available to the world outside this container
 EXPOSE $PORT
