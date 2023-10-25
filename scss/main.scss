@@ -20,3 +20,40 @@
 .drop-down.animate-drop {
   animation: dropAnimation 1s forwards;
 }
+
+.form-label {
+  color: #fff;
+  text-align: left;
+}
+.form-control, .btn {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+.form-control::placeholder {
+  color: #aaa;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #aaa;
+}
+.contact-form {
+  max-width: 900px;
+  margin: auto;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: transparent !important;
+  border: 1px solid #fff;
+  color: #fff;  /* Set text color to white */
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: transparent !important;
+  border-color: #fff;  /* Change border color on focus if necessary */
+  outline: none;  /* Remove outline on focus if necessary */
+  box-shadow: none;  /* Remove box-shadow on focus if necessary */
+  color: #fff;  /* Ensure text color remains white on focus */
+}
