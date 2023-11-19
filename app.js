@@ -19,7 +19,8 @@ app.use('/', rootRouter);
 // 404 Error Handler
 
 app.use((req, res, next) => {
-   res.status(404).render('404', {requestedUrl: req.originalUrl});
+    const fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+    res.status(404).render('404', { requestedUrl: fullUrl });
 });
 
 app.listen(PORT, () => {
