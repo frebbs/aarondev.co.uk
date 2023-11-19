@@ -30,3 +30,7 @@ logs/
 dist/
 build/
 /lib/
+
+# logfiles
+logs/
+logs.json

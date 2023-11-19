@@ -1,4 +1,5 @@
 import express from 'express';
+import logRequest from './utils/logger.js';
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -6,6 +7,7 @@ const PORT = process.env.PORT || 8080;
 import rootRouter from './routes/rootRouter.js';
 
 app.use([
+    logRequest,
     express.json(),
     express.urlencoded({extended: true}),
     express.static('public')
