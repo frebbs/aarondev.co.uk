@@ -16,6 +16,8 @@ RUN npm install
 # Copy the rest of your project files into the Docker container
 COPY . .
 
+RUN mkdir -p /usr/src/app/logs
+
 RUN npm run build:js
 RUN npm run build:sass
 
