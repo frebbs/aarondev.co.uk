@@ -3,21 +3,18 @@ import express from 'express';
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+import rootRouter from './routes/rootRouter.js';
+
 app.use([
     express.json(),
     express.urlencoded({extended: true}),
     express.static('public')
-])
+]);
 
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => {
-    res.render('home');
-})
+app.use('/', rootRouter);
 
-app.get('/contact', (req, res) => {
-    res.render('contact')
-})
 app.listen(PORT, () => {
     console.log(`Server running http://localhost:${PORT}`);
 })

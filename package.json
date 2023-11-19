@@ -9,10 +9,10 @@
     "start:dev": "nodemon app.js",
     "start:browserSync": "browser-sync start --proxy \"localhost:8080\" --files \"views/**/*.ejs, public/css/*.css, public/js/*.js\"",
     "start:js": "webpack --watch --mode development",
-    "sass:watch": "sass --watch scss/main.scss:public/css/main.css",
+    "sass:watch": "sass --watch src/scss/main.scss:public/css/main.css",
     "dev": "concurrently \"npm run start:dev\" \"npm run sass:watch\" \"npm run start:js\"",
     "build:js": "webpack --mode production",
-    "build:sass": "sass scss/main.scss:public/css/main.css"
+    "build:sass": "sass src/scss/main.scss:public/css/main.css"
   },
   "keywords": [],
   "author": "",

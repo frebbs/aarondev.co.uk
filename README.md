@@ -1,5 +1,3 @@
-Absolutely, Aaron! I can help update the README file to reflect the changes from GDS to Bootstrap, the addition of EJS and Webpack, and the setup for SCSS and Bootstrap JS files. Here's the updated version of your README file:
-
 # Frontend with Bootstrap
 
 ## Table of Contents
