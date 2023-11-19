@@ -13,7 +13,11 @@
     "dev": "concurrently \"npm run start:dev\" \"npm run sass:watch\" \"npm run start:js\"",
     "build:js": "webpack --mode production",
     "build:sass": "sass src/scss/main.scss:public/css/main.css",
+    "prepare": "husky install",
     "lint:js": "eslint . --ext .js --fix"
+  },
+  "lint-staged": {
+    "*.js": "npm run lint:js"
   },
   "keywords": [],
   "author": "",
@@ -34,6 +38,8 @@
     "browser-sync": "^2.23.7",
     "concurrently": "^8.2.1",
     "eslint": "^8.54.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
     "nodemon": "^3.0.1",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
