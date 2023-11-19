@@ -6,8 +6,7 @@ import isbot from 'isbot';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const logFilePath = path.join(__dirname, '../logs/logs.json'); // Adjust the path as needed
-
+const logFilePath = path.join(__dirname, '../logs/logs.json');
 
 function logRequest(req, res, next) {
 	const agent = useragent.parse(req.headers['user-agent']);
@@ -19,27 +18,28 @@ function logRequest(req, res, next) {
 		url: req.originalUrl,
 		method: req.method,
 		userAgent: req.headers['user-agent'],
-		os: agent.os.toString(),  // Operating System
-		browser: agent.toAgent(), // Browser
-		isBot: isBot             // Whether the visitor is a bot
+		os: agent.os.toString(),
+		browser: agent.toAgent(),
+		isBot: isBot
 	};
 
-
-	// Append log entry to the file
 	fs.readFile(logFilePath, (err, data) => {
-		if (err && err.code === 'ENOENT') {
-			// If the file doesn't exist, create it with the first log entry
-			return fs.writeFile(logFilePath, JSON.stringify([logEntry], null, 2), err => {
-				if (err) console.error(err);
-			});
-		} else if (data) {
-			// If the file exists, append the log entry
-			const logs = JSON.parse(data.toString());
-			logs.push(logEntry);
-			fs.writeFile(logFilePath, JSON.stringify(logs, null, 2), err => {
-				if (err) console.error(err);
-			});
+		let logs = [];
+
+		if (!err && data) {
+			try {
+				logs = JSON.parse(data.toString());
+			} catch (parseErr) {
+				console.error("Error parsing logs file:", parseErr);
+				// Handle malformed JSON file (e.g., by renaming the corrupted file and starting a new log file)
+			}
 		}
+
+		logs.push(logEntry);
+
+		fs.writeFile(logFilePath, JSON.stringify(logs, null, 2), writeErr => {
+			if (writeErr) console.error(writeErr);
+		});
 	});
 
 	next();
