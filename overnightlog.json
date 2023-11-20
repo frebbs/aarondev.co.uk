@@ -1,0 +1,532 @@
+[
+  {
+    "timestamp": "2023-11-19T21:24:55.752Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "os": "Ubuntu 0.0.0",
+    "browser": "Firefox 118.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:24:55.829Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/css/main.css",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "os": "Ubuntu 0.0.0",
+    "browser": "Firefox 118.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:24:55.848Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/js/bundle.js",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "os": "Ubuntu 0.0.0",
+    "browser": "Firefox 118.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:24:55.960Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/favicon.ico",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "os": "Ubuntu 0.0.0",
+    "browser": "Firefox 118.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:24:59.307Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/about",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "os": "Ubuntu 0.0.0",
+    "browser": "Firefox 118.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:24:59.361Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/css/main.css",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "os": "Ubuntu 0.0.0",
+    "browser": "Firefox 118.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:24:59.394Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/js/bundle.js",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "os": "Ubuntu 0.0.0",
+    "browser": "Firefox 118.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:25:01.874Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/contact",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "os": "Ubuntu 0.0.0",
+    "browser": "Firefox 118.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:25:01.933Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/css/main.css",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "os": "Ubuntu 0.0.0",
+    "browser": "Firefox 118.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:25:03.276Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "os": "Ubuntu 0.0.0",
+    "browser": "Firefox 118.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:25:03.329Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/js/bundle.js",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "os": "Ubuntu 0.0.0",
+    "browser": "Firefox 118.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:46:04.938Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/css/main.css",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Safari 17.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:46:04.954Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/css/main.css",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Safari 17.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:46:05.014Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/js/bundle.js",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Safari 17.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:46:07.266Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/contact",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Safari 17.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:46:07.314Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/css/main.css",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Safari 17.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T21:46:07.318Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/js/bundle.js",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Safari 17.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-19T22:40:22.702Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/owa/auth/x.js",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 zgrab/0.x",
+    "os": "Other 0.0.0",
+    "browser": "Other 0.0.0",
+    "isBot": true
+  },
+  {
+    "timestamp": "2023-11-19T23:59:24.133Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/",
+    "method": "GET",
+    "userAgent": "python-requests/2.31.0",
+    "os": "Other 0.0.0",
+    "browser": "Python Requests 2.31.0",
+    "isBot": true
+  },
+  {
+    "timestamp": "2023-11-20T00:48:03.922Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:104.71.6212.24) Gecko/25.2.4212.671 Firefox/2.0",
+    "os": "Windows 10.0.0",
+    "browser": "Firefox 2.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T01:33:28.520Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/",
+    "method": "HEAD",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Chrome 107.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T01:33:28.864Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Chrome 107.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T01:33:29.061Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/favicon.ico",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Chrome 107.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T01:33:29.530Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/favicon.ico",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Chrome 107.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T01:33:29.833Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/favicon.ico",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Chrome 107.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T01:33:29.921Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/favicon.png",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Chrome 107.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T01:33:30.008Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/favicon.png",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Chrome 107.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T01:33:30.094Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/favicon.png",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Chrome 107.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T01:33:54.868Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/110.0",
+    "os": "Linux 0.0.0",
+    "browser": "Firefox 110.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T01:37:27.220Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/webui/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0",
+    "os": "Windows 10.0.0",
+    "browser": "Firefox 110.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T01:41:07.347Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/favicon.ico",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0",
+    "os": "Linux 0.0.0",
+    "browser": "Firefox 108.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T01:42:37.636Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/110.0",
+    "os": "Linux 0.0.0",
+    "browser": "Firefox 110.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T01:45:43.864Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/geoserver/web/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0",
+    "os": "Windows 10.0.0",
+    "browser": "Firefox 110.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T01:46:12.922Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/.git/config",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 OPR/95.0.0.0",
+    "os": "Windows 10.0.0",
+    "browser": "Opera 95.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T03:23:51.753Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/autodiscover/autodiscover.json?@zdi/Powershell",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 zgrab/0.x",
+    "os": "Other 0.0.0",
+    "browser": "Other 0.0.0",
+    "isBot": true
+  },
+  {
+    "timestamp": "2023-11-20T03:30:43.809Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+    "os": "Linux 0.0.0",
+    "browser": "Chrome 108.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T04:13:09.636Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/?XDEBUG_SESSION_START=phpstorm",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+    "os": "Windows 10.0.0",
+    "browser": "Chrome 78.0.3904",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T04:21:57.684Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/Temporary_Listen_Addresses",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 zgrab/0.x",
+    "os": "Other 0.0.0",
+    "browser": "Other 0.0.0",
+    "isBot": true
+  },
+  {
+    "timestamp": "2023-11-20T04:21:57.897Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/ews/exchanges/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 zgrab/0.x",
+    "os": "Other 0.0.0",
+    "browser": "Other 0.0.0",
+    "isBot": true
+  },
+  {
+    "timestamp": "2023-11-20T04:21:57.988Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/ews/exchange%20/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 zgrab/0.x",
+    "os": "Other 0.0.0",
+    "browser": "Other 0.0.0",
+    "isBot": true
+  },
+  {
+    "timestamp": "2023-11-20T04:21:58.012Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/ews/exchange/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 zgrab/0.x",
+    "os": "Other 0.0.0",
+    "browser": "Other 0.0.0",
+    "isBot": true
+  },
+  {
+    "timestamp": "2023-11-20T04:21:58.060Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/ews/%20/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 zgrab/0.x",
+    "os": "Other 0.0.0",
+    "browser": "Other 0.0.0",
+    "isBot": true
+  },
+  {
+    "timestamp": "2023-11-20T04:21:58.107Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/ews/ews/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 zgrab/0.x",
+    "os": "Other 0.0.0",
+    "browser": "Other 0.0.0",
+    "isBot": true
+  },
+  {
+    "timestamp": "2023-11-20T04:21:58.272Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/ews/autodiscovers/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 zgrab/0.x",
+    "os": "Other 0.0.0",
+    "browser": "Other 0.0.0",
+    "isBot": true
+  },
+  {
+    "timestamp": "2023-11-20T04:21:58.406Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/autodiscover/autodiscovers/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 zgrab/0.x",
+    "os": "Other 0.0.0",
+    "browser": "Other 0.0.0",
+    "isBot": true
+  },
+  {
+    "timestamp": "2023-11-20T04:21:58.490Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/autodiscover/autodiscover%20/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 zgrab/0.x",
+    "os": "Other 0.0.0",
+    "browser": "Other 0.0.0",
+    "isBot": true
+  },
+  {
+    "timestamp": "2023-11-20T04:21:58.608Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/autodiscover/autodiscoverrs/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 zgrab/0.x",
+    "os": "Other 0.0.0",
+    "browser": "Other 0.0.0",
+    "isBot": true
+  },
+  {
+    "timestamp": "2023-11-20T04:21:58.638Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/autodiscove/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 zgrab/0.x",
+    "os": "Other 0.0.0",
+    "browser": "Other 0.0.0",
+    "isBot": true
+  },
+  {
+    "timestamp": "2023-11-20T04:44:28.735Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+    "os": "Mac OS X 13.1.0",
+    "browser": "Chrome 108.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T05:56:30.896Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/actuator/gateway/routes",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+    "os": "Windows 10.0.0",
+    "browser": "Chrome 78.0.3904",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T05:59:51.622Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/whyareugay",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/98.0.1108.62",
+    "os": "Windows 10.0.0",
+    "browser": "Edge 98.0.0",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T05:59:53.231Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/.env",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/605.1.15",
+    "os": "Mac OS X 10.15.7",
+    "browser": "Chrome 95.0.4638",
+    "isBot": false
+  },
+  {
+    "timestamp": "2023-11-20T05:59:53.274Z",
+    "ip": "::ffff:172.17.0.1",
+    "url": "/api/.env",
+    "method": "GET",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "os": "Windows 10.0.0",
+    "browser": "Firefox 118.0.0",
+    "isBot": false
+  }
+]

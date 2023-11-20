@@ -13,6 +13,7 @@ app.use([
 	express.static('public')
 ]);
 
+app.set('trust proxy', true);
 app.set('view engine', 'ejs');
 
 app.use('/', rootRouter);

@@ -8,13 +8,18 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const logFilePath = path.join(__dirname, '../logs/logs.json');
 
+function getRealIp(req) {
+	// Trust the X-Forwarded-For header, which is set by most proxies
+	return req.headers['x-forwarded-for'] || req.ip;
+}
 function logRequest(req, res, next) {
+	const realIp = getRealIp(req);
 	const agent = useragent.parse(req.headers['user-agent']);
 	const isBot = isbot(req.headers['user-agent']);
 
 	const logEntry = {
 		timestamp: new Date().toISOString(),
-		ip: req.ip,
+		ip: realIp,
 		url: req.originalUrl,
 		method: req.method,
 		userAgent: req.headers['user-agent'],
